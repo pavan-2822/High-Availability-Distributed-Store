@@ -13,18 +13,7 @@ This is a clean-room re-implementation of the behaviour described there —
 not a copy of any production codebase, and not a claim about production
 metrics. What is claimed here is exactly what the tests prove, below.
 
-## The 90-second story
 
-> A high-availability storage backend for a distributed remote-execution
-> platform. Redis Sentinel failover could happen, but the application's
-> write paths could remain stuck because client-side recovery was
-> incomplete  writes stayed unavailable even after the storage layer
-> had failed over. The work focused on the async Rust storage module:
-> failure detection across three write paths, UUID-guarded reconnect
-> deduplication, and pub/sub resubscription, validated by a
-> fake-Sentinel failover harness in CI. Separately, a consensus-layer
-> type refactor removed a compiler-level circular dependency that
-> blocked the Raft API.
 
 ## Architecture
 
