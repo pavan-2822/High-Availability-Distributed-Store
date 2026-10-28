@@ -1,0 +1,13 @@
+[package]
+name = "ha_store"
+version = "0.1.0"
+edition = "2021"
+description = "High-availability async Rust storage client: failure detection, UUID-guarded reconnect, and pub/sub resubscription, with a fake-Sentinel failover harness"
+license = "MIT"
+
+[dependencies]
+tokio = { workspace = true }
+uuid = { workspace = true }
+
+[dev-dependencies]
+tokio = { workspace = true }
