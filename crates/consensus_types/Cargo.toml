@@ -1,0 +1,6 @@
+[package]
+name = "consensus_types"
+version = "0.1.0"
+edition = "2021"
+description = "Shared Raft types owned by no single Raft crate, so raft_api and raft_state do not depend on each other"
+license = "MIT"
