@@ -1,0 +1,12 @@
+[workspace]
+resolver = "2"
+members = [
+    "crates/ha_store",
+    "crates/consensus_types",
+    "crates/raft_api",
+    "crates/raft_state",
+]
+
+[workspace.dependencies]
+tokio = { version = "1", features = ["full"] }
+uuid = { version = "1", features = ["v4"] }
