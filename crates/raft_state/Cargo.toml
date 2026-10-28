@@ -1,0 +1,9 @@
+[package]
+name = "raft_state"
+version = "0.1.0"
+edition = "2021"
+description = "Raft durable state depending only on consensus_types"
+license = "MIT"
+
+[dependencies]
+consensus_types = { path = "../consensus_types" }
